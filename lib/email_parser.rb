@@ -13,4 +13,6 @@ attr_accessor :name, :csv_emails
   def EmailAddressParser
     @csv_emails.split.collect dp |address|
     address.split(/[\n,]/)
+    end
+  end
 end 
