@@ -10,7 +10,7 @@ attr_accessor :name, :csv_emails
     @csv_emails = csv_emails
   end
   
-  def EmailAddressParser
+  def self.parse
     @csv_emails.split.collect do |address|
     address.split(/[\n,]/)
     end
