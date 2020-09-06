@@ -6,6 +6,10 @@ class EmailAddressParser
 
 attr_accessor :name, :csv_emails
 
-  def EmailAddressParser(csv_emails)
-    @emails = self.new
+  def initialize(csv_emails)
+    @csv_emails = csv_emails
+  end
+  
+  def EmailAddressParser
+    @csv_emails.split(/[\n,]/)
 end 
