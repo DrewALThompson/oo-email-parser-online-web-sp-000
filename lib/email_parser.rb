@@ -4,6 +4,4 @@
 # or whitespace (' ').
 class EmailAddressParser
   
-@@email_addresses = []
-attr_accessor :email_address
 end 
