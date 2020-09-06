@@ -14,5 +14,6 @@ attr_accessor :name, :csv_emails
     @csv_emails.split.collect dp |address|
     address.split(/[\n,]/)
     end
+    .flatten.uniq
   end
 end 
